@@ -1,0 +1,12 @@
+com/entity/PrivilegeEntity.class
+com/entity/LibfunMenusEntity.class
+com/repository/RoleprivilegeRepository.class
+com/entity/LibclassmEntity.class
+com/entity/UsersEntity.class
+com/repository/LibclassmRepository.class
+com/repository/LibfunMenusRepository.class
+com/entity/RoleprivilegeEntityPK.class
+com/entity/UsersEntityPK.class
+com/repository/PrivilegeRepository.class
+com/repository/UsersRepository.class
+com/entity/RoleprivilegeEntity.class
