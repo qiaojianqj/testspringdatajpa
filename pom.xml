@@ -44,6 +44,26 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--以下plugin使得pom里的properties可被application.properties引用-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <delimiters>
+                        <delimiter>${*}</delimiter><!-- to keep the default behavior -->
+                        <delimiter>@</delimiter><!-- to add Ant-like tokens style -->
+                    </delimiters>
+                    <encoding>utf-8</encoding>
+                    <useDefaultDelimiters>true</useDefaultDelimiters>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>jar</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>bat</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>bytes</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
